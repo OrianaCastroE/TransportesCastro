@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportes Castro - Grupo Empresarial de Logística y Transporte</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-truck"></i>
+                <span>Transportes Castro</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#empresas" class="nav-link">Empresas</a>
+                <a href="#historia" class="nav-link">Historia</a>
+                <a href="#institucional" class="nav-link">Institución</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="#" class="social-icon" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="social-icon" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="social-icon" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <div class="contact-toggle">
+            <i class="fas fa-envelope"></i>
+        </div>
+    </div>
+
+    <!-- Contact Widget -->
+    <div class="contact-widget">
+        <div class="widget-header">
+            <h3>Contacto Rápido</h3>
+            <button class="close-widget">&times;</button>
+        </div>
+        <div class="widget-content">
+            <p><strong>Teléfono:</strong> +56 2 2345 6789</p>
+            <p><strong>Email:</strong> info@transportescastro.cl</p>
+            <p><strong>Dirección:</strong> Av. Principal 1234, Santiago</p>
+            <button class="btn-contact">Enviar Mensaje</button>
+        </div>
+    </div>
+
+    <!-- Truck Decorative Elements -->
+    <div class="truck-left" data-truck="1">
+        <i class="fas fa-truck"></i>
+    </div>
+    <div class="truck-right" data-truck="2">
+        <i class="fas fa-truck-moving"></i>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero scroll-section">
+        <div class="hero-background">
+            <div class="grid-bg"></div>
+            <div class="gradient-overlay"></div>
+            <canvas id="canvas-bg"></canvas>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Transportes <span>Castro</span></h1>
+                <p class="hero-subtitle">
+                    Lideramos el transporte y la logística en latinoamérica con tres marcas consolidadas:
+                    <span class="highlight">Volcast</span>, 
+                    <span class="highlight">Volquetas del Este</span> y 
+                    <span class="highlight">Barométrica LAN</span>
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('empresas').scrollIntoView({behavior: 'smooth'})">
+                        Conocer Empresas
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('institucional').scrollIntoView({behavior: 'smooth'})">
+                        Nuestra Visión
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="floating-box" style="--delay: 0s;">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="floating-box" style="--delay: 0.5s;">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="floating-box" style="--delay: 1s;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section id="empresas" class="empresas scroll-section">
+        <div class="section-header">
+            <h2>Nuestras Empresas</h2>
+            <p>Tres pilares que conforman un grupo empresarial sólido y confiable</p>
+        </div>
+
+        <div class="empresas-grid">
+            <!-- Volcast -->
+            <div class="empresa-card scroll-reveal-scale card-stagger">
+                <div class="card-background preview-volcast" data-label="VOLCAST">
+                    <img
+                        class="card-preview"
+                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fvolcast.transportescastro.com.uy%2F?w=1200"
+                        alt="Preview sitio web Volcast"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        onerror="this.closest('.card-background').classList.add('preview-fallback'); this.remove();"
+                    >
+                    <div class="card-overlay"><span>Preview Web</span></div>
+                </div>
+                <div class="card-content">
+                    <h3>Volcast</h3>
+                    <p>Especialistas en transporte especializado y soluciones logísticas de alto valor.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check-circle"></i> Transporte Especializado</li>
+                        <li><i class="fas fa-check-circle"></i> Logística Avanzada</li>
+                        <li><i class="fas fa-check-circle"></i> Cobertura Regional</li>
+                    </ul>
+                    <a href="https://volcast.transportescastro.com.uy/" target="_blank" class="btn-card">Explorar</a>
+                </div>
+            </div>
+
+            <!-- Volquetas del Este -->
+            <div class="empresa-card scroll-reveal-rotate card-stagger">
+                <div class="card-background preview-volquetas" data-label="VOLQUETAS DEL ESTE">
+                    <img
+                        class="card-preview"
+                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fvolquetasdeleste.transportescastro.com.uy%2F?w=1200"
+                        alt="Preview sitio web Volquetas del Este"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        onerror="this.closest('.card-background').classList.add('preview-fallback'); this.remove();"
+                    >
+                    <div class="card-overlay"><span>Preview Web</span></div>
+                </div>
+                <div class="card-content">
+                    <h3>Volquetas del Este</h3>
+                    <p>Líderes en transporte de carga pesada y materiales de construcción.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check-circle"></i> Carga Pesada</li>
+                        <li><i class="fas fa-check-circle"></i> Materiales Construcción</li>
+                        <li><i class="fas fa-check-circle"></i> Flota Moderna</li>
+                    </ul>
+                    <a href="https://volquetasdeleste.transportescastro.com.uy/" target="_blank" class="btn-card">Explorar</a>
+                </div>
+            </div>
+
+            <!-- Barométrica LAN -->
+            <div class="empresa-card scroll-reveal-zoom card-stagger">
+                <div class="card-background preview-barometrica" data-label="BAROMETRICA LAN">
+                    <img
+                        class="card-preview"
+                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Forianacastroe.github.io%2FBarometricaLAN%2F?w=1200"
+                        alt="Preview sitio web Barometrica LAN"
+                        loading="lazy"
+                        referrerpolicy="no-referrer"
+                        onerror="this.closest('.card-background').classList.add('preview-fallback'); this.remove();"
+                    >
+                    <div class="card-overlay"><span>Preview Web</span></div>
+                </div>
+                <div class="card-content">
+                    <h3>Barométrica LAN</h3>
+                    <p>Expertos en soluciones de almacenamiento y distribución multimodal.</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check-circle"></i> Almacenamiento</li>
+                        <li><i class="fas fa-check-circle"></i> Distribución Multimodal</li>
+                        <li><i class="fas fa-check-circle"></i> Tecnología IoT</li>
+                    </ul>
+                    <a href="https://orianacastroe.github.io/BarometricaLAN/" target="_blank" class="btn-card">Explorar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / History Section -->
+    <section id="historia" class="historia scroll-section">
+        <div class="section-header">
+            <h2>Nuestra Historia</h2>
+            <p>Décadas de trayectoria, innovación y crecimiento en el sector</p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal-left card-stagger" data-year="2000">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Fundación de Transportes Castro</h3>
+                        <p>Iniciamos como empresa familiar con una visión clara: ser líderes en transporte y logística. Con solo 5 camiones comenzamos a forjar nuestra reputación en el mercado.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal-right card-stagger" data-year="2008">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Creación de Volcast</h3>
+                        <p>Expandimos nuestro portafolio creando Volcast, especializada en transporte especializado para carga de alto valor. La flota ya alcanzaba los 50 vehículos modernos.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal-left card-stagger" data-year="2012">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Creación de Volquetas del Este</h3>
+                        <p>Nacen Volquetas del Este como respuesta a la demanda regional de transporte de carga pesada y materiales de construcción, consolidando nuestra presencia en el mercado.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal-right card-stagger" data-year="2016">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Incorporación de Barométrica LAN</h3>
+                        <p>Adquirimos Barométrica LAN, integrando una moderna red de almacenamiento y distribución multimodal. Esto permitió ampliar significativamente nuestras capacidades logísticas.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal-left card-stagger" data-year="2020">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Transformación Digital</h3>
+                        <p>Invertimos en tecnología IoT, GPS en tiempo real y sistemas de gestión automática. Nuestro grupo alcanzó más de 200 vehículos y posicionamiento regional destacado.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal-right card-stagger" data-year="2024">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Consolidación y Visión 2030</h3>
+                        <p>Transportes Castro se posiciona como grupo empresarial líder con presencia internacional. Enfocamos nuestros esfuerzos en sustentabilidad y eficiencia operativa para liderar el futuro del transporte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Section -->
+    <section id="institucional" class="institucional scroll-section">
+        <div class="institutional-container">
+            <div class="institutional-header">
+                <h2>Somos Transportes Castro</h2>
+                <p>Un grupo empresarial con más de dos décadas construyendo confianza y excelencia</p>
+            </div>
+
+            <div class="leadership-row scroll-reveal-scale">
+                <article class="ceo-card scroll-reveal-left card-stagger">
+                    <img src="./img/CEO/Alexis.jpeg" alt="CEO de Transportes Castro" loading="lazy">
+                    <div class="ceo-info">
+                        <h3>Dirección General</h3>
+                        <p>CEO Grupo Castro</p>
+                    </div>
+                </article>
+                <article class="ceo-card scroll-reveal-right card-stagger">
+                    <img src="./img/CEO/Patricia.jpeg" alt="CEO Operaciones de Transportes Castro" loading="lazy">
+                    <div class="ceo-info">
+                        <h3>Dirección Operativa</h3>
+                        <p>CEO Operaciones</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="institutional-grid">
+                <div class="institutional-card scroll-reveal-left card-stagger">
+                    <div class="card-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Confianza</h3>
+                    <p>Construida a través de años de cumplimiento, transparencia y responsabilidad con nuestros clientes y socios.</p>
+                </div>
+
+                <div class="institutional-card scroll-reveal-scale card-stagger">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Excelencia</h3>
+                    <p>Nos comprometemos con el más alto estándar de calidad en cada operación y servicio que ofrecemos.</p>
+                </div>
+
+                <div class="institutional-card scroll-reveal-right card-stagger">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sostenibilidad</h3>
+                    <p>Operamos con responsabilidad ambiental, implementando tecnologías limpias y eficiencia operativa.</p>
+                </div>
+
+                <div class="institutional-card scroll-reveal-zoom card-stagger">
+                    <div class="card-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Innovación</h3>
+                    <p>Incorporamos constantemente nuevas tecnologías y procesos para mejorar nuestros servicios.</p>
+                </div>
+            </div>
+
+            <div class="operational-info">
+                <h3>Servimos en</h3>
+                <div class="operation-details">
+                    <div class="detail-item">
+                        <span class="number">3</span>
+                        <span class="label">Marcas Consolidadas</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="number">250+</span>
+                        <span class="label">Vehículos</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="number">15+</span>
+                        <span class="label">Países</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="number">500+</span>
+                        <span class="label">Empleados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contacto scroll-section">
+        <div class="contacto-container">
+            <div class="contacto-header">
+                <span class="contacto-eyebrow">Estamos para ayudarte</span>
+                <h2>Hablemos</h2>
+                <p>Respondemos en menos de 24 horas. Contanos tu necesidad y te ofrecemos una solución a medida.</p>
+            </div>
+
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <div class="info-card scroll-reveal-left card-stagger">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Ubicación</h3>
+                            <p>Av. Principal 1234<br>Santiago, Chile</p>
+                        </div>
+                    </div>
+                    <div class="info-card scroll-reveal-scale card-stagger">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Teléfono</h3>
+                            <p>+56 2 2345 6789<br>+56 9 8765 4321</p>
+                        </div>
+                    </div>
+                    <div class="info-card scroll-reveal-right card-stagger">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>info@transportescastro.cl<br>ventas@transportescastro.cl</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-social">
+                        <span>Seguinos en</span>
+                        <div class="contacto-social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacto-form-wrapper scroll-reveal-right">
+                    <div class="form-header">
+                        <h3>Envianos un mensaje</h3>
+                        <p>Completá el formulario y nos ponemos en contacto con vos.</p>
+                    </div>
+                    <form class="contacto-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" placeholder="¿En qué podemos ayudarte?">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" placeholder="Contanos tu necesidad con detalle..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-send">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Transportes Castro</h4>
+                <p>Grupo empresarial líder en transporte y logística, respalda a Volcast, Volquetas del Este y Barométrica LAN.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Nuestras Empresas</h4>
+                <ul>
+                    <li><a href="https://volcast.transportescastro.com.uy/" target="_blank">Volcast</a></li>
+                    <li><a href="https://volquetasdeleste.transportescastro.com.uy/" target="_blank">Volquetas del Este</a></li>
+                    <li><a href="https://orianacastroe.github.io/BarometricaLAN/" target="_blank">Barométrica LAN</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#empresas">Empresas</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#institucional">Institución</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Transportes Castro - Todos los derechos reservados | Diseño profesional para tu logística</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
