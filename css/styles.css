@@ -106,6 +106,12 @@ body::before {
     letter-spacing: -0.5px;
 }
 
+.logo img {
+    max-height: 48px;
+    width: auto;
+    display: block;
+}
+
 .logo i {
     color: var(--accent-color);
     font-size: 1.8rem;
