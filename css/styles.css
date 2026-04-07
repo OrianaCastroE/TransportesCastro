@@ -1286,8 +1286,8 @@ body::before {
 
 .institutional-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 1.4rem;
     margin-bottom: 4rem;
 }
 
@@ -1295,7 +1295,7 @@ body::before {
     background: var(--bg-lighter);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 2.5rem;
+    padding: 1.8rem 1.4rem;
     text-align: center;
     transition: var(--transition);
     animation: fadeInUp 0.5s ease-out;
@@ -1329,66 +1329,65 @@ body::before {
 }
 
 .institutional-card .card-icon {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     color: var(--accent-color);
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.9rem;
     opacity: 1;
     animation: none;
     transition: var(--transition);
 }
 
 .institutional-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
     color: var(--primary-color);
     font-weight: 700;
 }
 
 .institutional-card p {
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.7;
+    font-size: 0.84rem;
+    line-height: 1.6;
 }
 
 .operational-info {
-    background: linear-gradient(135deg, 
-        rgba(0, 0, 0, 0.04), 
-        rgba(0, 0, 0, 0.02));
-    border: 2px solid var(--border-color);
-    border-radius: 12px;
-    padding: 3.5rem;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f7f8 100%);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 2rem 1.4rem;
     text-align: center;
-    box-shadow: var(--shadow-premium);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
 }
 
 .operational-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
     color: var(--primary-color);
     font-weight: 700;
+    margin-bottom: 1.2rem;
 }
 
 .operation-details {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 2.5rem;
+    gap: 0.9rem;
 }
 
 .detail-item {
+    padding: 0.7rem 0.35rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.25rem;
 }
 
 .detail-item .number {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
     font-weight: 800;
     color: var(--accent-color);
 }
 
 .detail-item .label {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 600;
 }
 
@@ -2294,9 +2293,10 @@ body::before {
     .institutional-card h3 { font-size: 1.1rem; }
     .institutional-card p  { font-size: 0.82rem; }
 
-    .operational-info { padding: 1.8rem 1rem; }
-    .operation-details { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
-    .detail-item .number { font-size: 2rem; }
+    .operational-info { padding: 1.4rem 0.9rem; }
+    .operation-details { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
+    .detail-item { padding: 0.45rem 0.25rem; }
+    .detail-item .number { font-size: 1.7rem; }
     .detail-item .label  { font-size: 0.8rem; }
 
     /* CONTACTO */
@@ -2362,15 +2362,20 @@ body::before {
 
     /* INSTITUCIONAL */
     .leadership-row {
-        grid-template-columns: 1fr;
-        max-width: 260px;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        max-width: 360px;
         margin: 0 auto 1.5rem;
+        gap: 0.55rem;
     }
-    .ceo-card img { height: 200px; }
+    .ceo-card img { height: 150px; }
+    .ceo-info { padding: 0.65rem 0.55rem 0.75rem; }
+    .ceo-info h3 { font-size: 0.78rem; }
+    .ceo-info p  { font-size: 0.72rem; }
     .institutional-grid { grid-template-columns: 1fr; gap: 0.8rem; }
-    .operational-info { padding: 1.2rem 0.8rem; }
-    .operation-details { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
-    .detail-item .number { font-size: 1.6rem; }
+    .operational-info { padding: 1rem 0.65rem; }
+    .operation-details { grid-template-columns: repeat(2, 1fr); gap: 0.55rem; }
+    .detail-item { padding: 0.35rem 0.2rem; }
+    .detail-item .number { font-size: 1.45rem; }
 
     /* CONTACTO */
     .contacto-form-wrapper { padding: 1.2rem 1rem; }
@@ -2401,4 +2406,15 @@ body::before {
     .section-header h2,
     .institutional-header h2,
     .contacto-header h2 { font-size: 1.3rem; }
+
+    .leadership-row {
+        grid-template-columns: repeat(2, minmax(110px, 1fr));
+        max-width: 320px;
+        gap: 0.45rem;
+    }
+
+    .ceo-card img { height: 130px; }
+    .ceo-info { padding: 0.55rem 0.45rem 0.65rem; }
+    .ceo-info h3 { font-size: 0.72rem; }
+    .ceo-info p  { font-size: 0.68rem; }
 }
