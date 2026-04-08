@@ -1013,7 +1013,10 @@ body::before {
 }
 
 .btn-card {
-    align-self: flex-start;
+    align-self: stretch;
+    display: block;
+    width: 100%;
+    text-align: center;
     padding: 0.9rem 2rem;
     background: linear-gradient(135deg, var(--accent-color), var(--accent-light));
     color: white;
